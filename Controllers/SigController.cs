@@ -13,6 +13,16 @@ namespace WebApplication4.Controllers
         {
             return "NN String";
         }
+        [Route("list/s")]
+        public List<String> ilst()
+        {
+            List<String> nn = new List<string>();
+            nn.Add("Satya ");
+            nn.Add("Reddy ");
+            nn.Add("Kovvuri ");
+            nn.Add("Aditya ");
+            return nn;
+        }
         public IActionResult Index()
         {
             return View();
