@@ -8,6 +8,11 @@ namespace WebApplication4.Controllers
 {
     public class SigController : Controller
     {
+        [Route("sd/sd")]
+        public string nn()
+        {
+            return "NN String";
+        }
         public IActionResult Index()
         {
             return View();
